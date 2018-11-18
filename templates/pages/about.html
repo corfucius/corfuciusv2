@@ -1,0 +1,110 @@
+{% extends 'base.html' %}
+{% block content %}
+
+<!--about-->
+<div class="container">
+  <div class="row">
+    <div class="col m6 s12">
+      <img class="circle responsive-img z-depth-3" src="/static/media/mePic.jpeg">
+    </div>
+    <div class="col m6 s12 grey-text">
+      <h2>Hi!</h2>
+      <p class="flow-text">
+        I am a programmer with an interest in software and hardware. I particularly enjoy Python, JS and databases. A
+        recent intership at Kinetic helped me
+        realize the importance of programming fundamentals, and inspired me to better understand the universal
+        principles behind writing good code that apply to all programming languages. I want to build a solid foundation
+        that will be strong enough to support growth into many new and exciting areas as I continue to learn and push
+        forward.
+      </p>
+      <p class="flow-text"> I have had many hobbies and creative pursuits over the years including photography, guitar,
+        sketching/art, and
+        reading non-fiction. I consider myself a student of life, I enjoy figuring out how things work, from body and
+        mind,
+        to hardware and software.
+      </p>
+    </div>
+  </div>
+
+  <br><br>
+  <!--Experience-->
+  <div class="container">
+    <div class="row">
+      <div class="col s12 header grey-text">
+        <p class="flow-text light-blue-text">I have experience in the following areas:</p>
+      </div>
+    </div>
+    <div class="row">
+      <table class="centered striped grey-text">
+        <thead>
+          <tr>
+            <th>Programming Languages</th>
+            <th>Software</th>
+            <th>Other</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>HTML</td>
+            <td>Windows 10</td>
+            <td>Bash Scripting</td>
+          </tr>
+          <tr>
+            <td>CSS</td>
+            <td>Mac OS</td>
+            <td>CMS</td>
+          </tr>
+          <tr>
+            <td>Javascript</td>
+            <td>Affinity Photo</td>
+            <td>Wordpress</td>
+          </tr>
+          <tr>
+            <td>PHP</td>
+            <td>Affinity Designer</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>MySQL</td>
+            <td>Gitbucket</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Python</td>
+            <td>Beyond Compare</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Django</td>
+            <td>Linux</td>
+            <td></td>
+          </tr>
+          <tr>
+            <td>Postgres</td>
+            <td>Github.. of course</td>
+            <td></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="col s12 m6 light-grey">
+      <br><br>
+      <div class="card horizontal z-depth-1">
+        <div class="card-image">
+          <img class="grey" src="/static/media/whiteLogo.png">
+        </div>
+        <div class="card-stacked">
+          <div class="card-content light-grey light-blue-text">
+            <p>Check out my old website or my github code. You will find some of my very first projects there.</p>
+          </div>
+          <div class="card-action">
+            <a href="https://corfucius.org">corfucius.org</a>
+            <a href="https://github.com/corfucius">github.com/corfucius</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,43 @@
+<div class="navbar-fixed">
+  <nav class="light-blue lighten-2">
+    <div class="container">
+      <div class="nav-wrapper">
+        <a href="#" class="brand-logo">corfucius v2</a>
+        <a href="#" data-target="mobile-nav" class="sidenav-trigger">
+          <!--Put icon name inside of menu tag-->
+          <i class="material-icons">menu</i>
+        </a>
+        <ul class="right hide-on-med-and-down">
+          <li>
+            <a href="{% url 'index' %}">Home</a>
+          </li>
+          <li>
+            <a href="{% url 'about' %}">About</a>
+          </li>
+          <li>
+            <a href="blog.html">Blog</a>
+          </li>
+          <li>
+            <a href="{% url 'gallery' %}">Gallery</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</div>
+<!--sidebar, must have class and id-->
+<ul class="django sidenav" id="mobile-nav">
+  <li>
+    <a href="{% url 'index' %}">Home</a>
+  </li>
+  <li>
+    <a href="{% url 'about' %}">About</a>
+  </li>
+  <li>
+    <a href="blog.html">Blog</a>
+  </li>
+  <li>
+    <a href="{% url 'gallery' %}">Gallery</a>
+  </li>
+</ul>
+<br><br>
