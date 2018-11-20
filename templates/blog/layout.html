@@ -1,0 +1,93 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <!-- Google Icon Font-->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <!-- materialize.css-->
+  <link type="text/css" rel="stylesheet" href="{% static 'css/materialize.css' %}" media="screen,projection" />
+  <link type="text/css" rel="stylesheet" href="{% static 'css/style.css' %}" media="screen,projection" />
+  <!--Font Awesome-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU"
+    crossorigin="anonymous">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Corfucius V2</title>
+</head>
+
+<body id="home" class="scrollspy">
+  <!--navbar-->
+  <div class="navbar-fixed grey-text">
+    <nav class="white">
+      <div class="container">
+        <div class="nav-wrapper">
+          <a href="#" class="brand-logo grey-text">corfucius v2</a>
+          <a href="#" data-target="mobile-nav" class="sidenav-trigger grey-text">
+            <!--Put icon name inside of menu tag-->
+            <i class="material-icons">menu</i>
+          </a>
+          <ul class="django right hide-on-med-and-down">
+            <li>
+              <a href="{% url 'index' %}">Home</a>
+            </li>
+            <li>
+              <a href="{% url 'about' %}">About</a>
+            </li>
+            <li>
+              <a href="{% url 'blog' %}">Blog</a>
+            </li>
+            <li>
+              <a href="{% url 'gallery' %}">Gallery</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+    </nav>
+  </div>
+  <!--sidebar, must have class and id-->
+  <ul class="sidenav" id="mobile-nav">
+    <li>
+      <a href="{% url 'index' %}">Home</a>
+    </li>
+    <li>
+      <a href="{% url 'about' %}">About</a>
+    </li>
+    <li>
+      <a href="{% url 'blog' %}">Blog</a>
+    </li>
+    <li>
+      <a href="{% url 'gallery' %}">Gallery</a>
+    </li>
+  </ul>
+<!-- Blog Home -->
+<div class="main container">
+  <br><br>
+  <div class="row">
+  <div class="col s12 z-depth-2">
+  <h3 class="blog card-panel light-blue lighten-2 center-align white-text z
+  ">Cor's Simple Django Blog</h3>
+  <header class="container center-align">
+    <img class="responsive-img center-align" src="/static/media/python-powered.png" alt="python-logo">
+  </header>
+  <div class="container">
+    {% block content %}
+    {% endblock %}
+    <br>
+    <a style="display:block" class="center-align" href="/admin">Admin Login</a>
+  </div>
+</div>
+</div>
+</div>
+<!-- Blog Custom Footer -->
+<footer class="section white grey-text center z-depth-1">
+  <p class="flow-text">corfuciusv2.org &copy; 2018</p>
+</footer>
+  
+<!--JavaScript at end of body for optimized loading-->
+<script type="text/javascript" src="{% static 'js/materialize.min.js' %}"></script>
+<script src="{% static 'js/materialize.js' %}"></script>
+<script type="text/javascript" src="{% static 'js/init.js' %}"></script>
+  
+</body>
+</html>
