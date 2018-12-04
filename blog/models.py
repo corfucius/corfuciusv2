@@ -1,9 +1,10 @@
 from django.db import models
 from datetime import datetime
+from tinymce import HTMLField
 
 class Posts(models.Model):
     title = models.CharField(max_length=200)
-    body = models.TextField()
+    body = HTMLField('Content')
     image = models.FileField(null=True, blank=True)
     #another option for pic uploads
     #image = models.ImageField(upload_to='photos/', blank=True)
