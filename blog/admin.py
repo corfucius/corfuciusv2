@@ -1,6 +1,5 @@
 from django.contrib import admin
 from .models import Posts
-from django.contrib import admin
 
 class blogAdmin(admin.ModelAdmin):
     list_display = ('id', 'title', 'created_at')

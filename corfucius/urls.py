@@ -7,7 +7,7 @@ from django.urls import path, include
 from filebrowser.sites import site
 
 urlpatterns = [
-  #this links to the urls.py of the pages app
+  #this links to the urls.py of the other apps
     path('', include('pages.urls')),
     path('blog/', include('blog.urls')),
     path('admin/', admin.site.urls),
@@ -15,5 +15,4 @@ urlpatterns = [
     path('admin/filebrowser/', site.urls),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
-#urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 urlpatterns += staticfiles_urlpatterns()

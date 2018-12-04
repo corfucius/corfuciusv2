@@ -4,10 +4,9 @@ from tinymce import HTMLField
 
 class Posts(models.Model):
     title = models.CharField(max_length=200)
+    #add WYSIWYG editor to body field in admin
     body = HTMLField('Content')
     image = models.FileField(null=True, blank=True)
-    #another option for pic uploads
-    #image = models.ImageField(upload_to='photos/', blank=True)
     created_at = models.DateTimeField(default=datetime.now, blank=True)
     
     def __str__(self):
