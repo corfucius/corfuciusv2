@@ -141,7 +141,7 @@ TINYMCE_DEFAULT_CONFIG = {
 
 LANGUAGE_CODE = 'en-us'
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'America/Chicago'
 
 USE_I18N = True
 
