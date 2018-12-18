@@ -1,9 +1,6 @@
 from django.db import models
-from datetime import datetime
 from tinymce import HTMLField
 from django.utils import timezone
-
-
 
 class Posts(models.Model):
     title = models.CharField(max_length=200)
